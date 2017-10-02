@@ -1,8 +1,8 @@
 {%set name = "zodbpickle" %}
-{%set version = "0.6.0" %}
+{%set version = "0.7.0" %}
 {%set compress_type = "tar.gz" %}
 {%set hash_type = "sha256" %}
-{%set hash_val = "ea3248be966159e7791e3db0e35ea992b9235d52e7d39835438686741d196665" %}
+{%set hash_val = "95a247fb17bce980af8d548af70ac5bd1bad22773f242eb8efa24428efa909a8" %}
 {%set build_num = "0" %}
 
 package:
