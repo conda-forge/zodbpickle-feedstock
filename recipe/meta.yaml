@@ -1,8 +1,8 @@
 {% set name = "zodbpickle" %}
-{% set version = "0.7.0" %}
+{% set version = "1.0" %}
 {% set bundle = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash = "95a247fb17bce980af8d548af70ac5bd1bad22773f242eb8efa24428efa909a8" %}
+{% set hash = "3af9169fb1d5901cf6693ab356b0dfda20ad2cacc5673fad59b4449ed50d5399" %}
 {% set build = 0 %}
 
 package:
@@ -16,7 +16,7 @@ source:
 
 build:
   preserve_egg_dir: True
-  number: {{ build }}
+  number: 0
   script: python setup.py install --single-version-externally-managed --record=record.txt
 
 requirements:
