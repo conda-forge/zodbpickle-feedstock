@@ -14,14 +14,16 @@ Summary: Fork of Python 3 pickle module.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/zodbpickle-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/zodbpickle-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/zodbpickle-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/zodbpickle-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/zodbpickle-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/zodbpickle-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/zodbpickle-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/zodbpickle-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/zodbpickle-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/zodbpickle-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/zodbpickle-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/zodbpickle-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/zodbpickle/badges/version.svg)](https://anaconda.org/conda-forge/zodbpickle)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/zodbpickle/badges/downloads.svg)](https://anaconda.org/conda-forge/zodbpickle)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-zodbpickle-green.svg)](https://anaconda.org/conda-forge/zodbpickle) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/zodbpickle.svg)](https://anaconda.org/conda-forge/zodbpickle) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/zodbpickle.svg)](https://anaconda.org/conda-forge/zodbpickle) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/zodbpickle.svg)](https://anaconda.org/conda-forge/zodbpickle) |
 
 Installing zodbpickle
 =====================
