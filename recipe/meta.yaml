@@ -9,7 +9,6 @@ package:
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.{{ bundle }}
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
   {{ hash_type }}: {{ hash }}
 
@@ -20,9 +19,11 @@ build:
 
 requirements:
   build:
+    - {{ compiler('c') }}
+    
+  host:
     - python
     - pip
-    - toolchain
 
   run:
     - python
