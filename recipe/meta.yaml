@@ -1,15 +1,14 @@
 {% set name = "zodbpickle" %}
-{% set version = "1.0.1" %}
+{% set version = "1.0.2" %}
 {% set bundle = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash = "5fdfa84f05b25511a4e1190ec98728aa487e2eb6db016a951fdbb79bcc7307e0" %}
+{% set hash = "f26e6eba6550ff1575ef2f2831fc8bc0b465f17f9757d0b6c7db55fab5702061" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.{{ bundle }}
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
   {{ hash_type }}: {{ hash }}
 
@@ -20,9 +19,11 @@ build:
 
 requirements:
   build:
+    - {{ compiler('c') }}
+    
+  host:
     - python
     - pip
-    - toolchain
 
   run:
     - python
