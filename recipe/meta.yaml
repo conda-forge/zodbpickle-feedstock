@@ -1,8 +1,8 @@
 {% set name = "zodbpickle" %}
-{% set version = "1.0.4" %}
+{% set version = "1.1" %}
 {% set bundle = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash = "25d35f7c5ed95689d788b4da2a201990368b7abf032df0974632d0f8c5b39058" %}
+{% set hash = "6a60a2b996abea0d75ae1617c40229171834ff660527370bdd0c44645dda6906" %}
 
 package:
   name: {{ name|lower }}
@@ -15,7 +15,7 @@ source:
 build:
   preserve_egg_dir: True
   number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   build:
