@@ -1,7 +1,6 @@
 {% set name = "zodbpickle" %}
 {% set version = "1.0.4" %}
 {% set bundle = "tar.gz" %}
-{% set hash_type = "sha256" %}
 {% set hash = "25d35f7c5ed95689d788b4da2a201990368b7abf032df0974632d0f8c5b39058" %}
 
 package:
@@ -10,12 +9,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
-  {{ hash_type }}: {{ hash }}
+  sha256: {{ hash }}
 
 build:
   preserve_egg_dir: True
-  number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  number: 1
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   build:
