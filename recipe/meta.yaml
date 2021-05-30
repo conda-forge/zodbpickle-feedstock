@@ -36,7 +36,7 @@ test:
 
 about:
   home: http://pypi.python.org/pypi/zodbpickle
-  license: PSF 2 and ZPL 2.1
+  license: ZPL-2.0
   license_file: LICENSE.txt
   license_family: Other
   summary: 'Fork of Python 3 pickle module.'
