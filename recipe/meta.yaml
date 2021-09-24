@@ -1,5 +1,5 @@
 {% set name = "zodbpickle" %}
-{% set version = "2.0.0" %}
+{% set version = "2.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e0d9930f46d41f086a763f40a12d014c46bbc5e19e728c8d66d7a06fef616739
+  sha256: ca6a89b55fd1298bf4a9bc9b5640805792e4c27ebf0153a194ec63b8ec1df2a8
 
 build:
   number: 0
@@ -16,7 +16,7 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}
-    
+
   host:
     - python
     - pip
@@ -31,7 +31,7 @@ test:
     - zodbpickle.tests
   commands:
     - pip check
-  requires: 
+  requires:
     - pip
 
 about:
@@ -39,7 +39,7 @@ about:
   license: PSF-2.0 and ZPL-2.0
   license_file: LICENSE.txt
   license_family: Other
-  summary: 'Fork of Python 3 pickle module.'
+  summary: Fork of Python 3 pickle module.
   dev_url: https://github.com/zopefoundation/zodbpickle
 
 extra:
