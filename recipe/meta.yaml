@@ -1,5 +1,5 @@
 {% set name = "zodbpickle" %}
-{% set version = "2.2.0" %}
+{% set version = "2.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 584127173db0a2647af0fc8cb935130b1594398c611e94fb09a719e09e1ed4bd
+  sha256: e4cb5c719705e8bb1e8eee4aa24e2071a3094ecf2783d87407ab822f166da3a2
 
 build:
-  number: 2
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
