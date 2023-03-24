@@ -1,11 +1,11 @@
-About zodbpickle
-================
+About zodbpickle-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/zodbpickle-feedstock/blob/main/LICENSE.txt)
 
 Home: http://pypi.python.org/pypi/zodbpickle
 
 Package license: PSF-2.0 and ZPL-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/zodbpickle-feedstock/blob/main/LICENSE.txt)
 
 Summary: Fork of Python 3 pickle module.
 
