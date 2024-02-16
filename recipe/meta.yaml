@@ -1,5 +1,5 @@
 {% set name = "zodbpickle" %}
-{% set version = "3.1" %}
+{% set version = "3.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: b9ec32e706c7b808b79a53a7ad96609117e94283772b400ee76552107aabcc11
+  sha256: eb9c0ee389b3266aa8f41945b62a99815d261f69d1f42977150912aa6796ab0c
 
 build:
   number: 0
