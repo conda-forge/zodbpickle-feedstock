@@ -1,13 +1,13 @@
 {% set name = "zodbpickle" %}
-{% set version = "4.4" %}
+{% set version = "4.5" %}
 
 package:
   name: {{ name|lower }}
   version: "{{ version }}"
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 79f33cc49a09b28a8b3b40369c14216e8057177eb8c7e898d76afd6b3194cb78
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 67d4295ddb68b2410fe417094ffe1a8b0ed41834ee308020f58ee1b633e1f751
 
 build:
   number: 0
