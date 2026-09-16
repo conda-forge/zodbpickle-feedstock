@@ -1,27 +1,26 @@
 schema_version: 1
 
 context:
-  name: zodbpickle
   version: "4.5"
 
 package:
-  name: ${{ name|lower }}
+  name: zodbpickle
   version: ${{ version }}
 
 source:
-  url: https://files.pythonhosted.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
+  url: https://pypi.org/packages/source/z/zodbpickle/zodbpickle-${{ version }}.tar.gz
   sha256: 67d4295ddb68b2410fe417094ffe1a8b0ed41834ee308020f58ee1b633e1f751
 
 build:
-  number: 2
+  number: 3
   script: ${{ PYTHON }} -m pip install . -vv
 
 requirements:
   build:
     - if: build_platform != target_platform
-      then: python
-    - if: build_platform != target_platform
-      then: cross-python_${{ target_platform }}
+      then:
+        - python
+        - cross-python_${{ target_platform }}
     - ${{ compiler('c') }}
     - ${{ stdlib("c") }}
   host:
@@ -38,6 +37,8 @@ tests:
         - zodbpickle
         - zodbpickle.tests
       pip_check: true
+  - script:
+      - python -m unittest discover -b -v zodbpickle
 
 about:
   license: PSF-2.0 and ZPL-2.0
