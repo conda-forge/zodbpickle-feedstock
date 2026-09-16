@@ -37,6 +37,8 @@ tests:
         - zodbpickle
         - zodbpickle.tests
       pip_check: true
+  - script:
+      - python -m unittest discover -b -v zodbpickle
 
 about:
   license: PSF-2.0 and ZPL-2.0
