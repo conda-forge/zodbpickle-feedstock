@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "4.5"
+  version: "4.6"
 
 package:
   name: zodbpickle
@@ -9,10 +9,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/z/zodbpickle/zodbpickle-${{ version }}.tar.gz
-  sha256: 67d4295ddb68b2410fe417094ffe1a8b0ed41834ee308020f58ee1b633e1f751
+  sha256: f66b7edc293c3f71dedd9f9181c96ccecb583560f5132de0fbfd0727b9f6eaa1
 
 build:
-  number: 3
+  number: 0
   script: ${{ PYTHON }} -m pip install . -vv
 
 requirements:
